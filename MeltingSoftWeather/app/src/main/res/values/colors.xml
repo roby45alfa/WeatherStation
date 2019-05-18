@@ -3,6 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="blue">#0300AC</color>
-    <color name="sfondo">#ADE2FF</color>
+    <color name="testo">#000000</color>
+    <color name="titoli">#2196F3</color>
+    <color name="sfondo">#FFFFFF</color>
+    <color name="button">#2196F3</color>
+    <color name="buttonText">#FFFFFF</color>
 </resources>

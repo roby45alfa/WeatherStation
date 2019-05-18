@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">MeltingSoft Weather</string>
+    <string name="app_name">Melting Weather</string>
     <string name="meteo">Meteo Vercelli</string>
     <string name="crediti">Crediti</string>
-    <string name="secondTitle">MeltingSoft\'s Weather</string>
+    <string name="secondTitle">MeltingSoft\'s Weather (statico)</string>
     <string name="test1">12 °C</string>
     <string name="humidity">Umidità</string>
     <string name="test2">70%</string>
@@ -12,8 +12,8 @@
     <string name="firstTitle">MeltingSoft\nWeather Station</string>
     <string name="logo">Logo</string>
     <string name="scopo">Scopo</string>
-    <string name="txtCrediti">Quest\'app è stata realizzata come supporto al progetto riguardante la creazione di una Stazione Meteo con Arduino, per mostrare i dati rilevati dai sensori di Temperatura, Umidità e Pressione</string>
-    <string name="creatori">Creatori</string>
+    <string name="txtCrediti">Quest\'app è stata creata come supporto al progetto riguardante la realizzazione di una Stazione Meteo tramite Arduino, per mostrare i dati rilevati dai sensori di Temperatura, Umidità e Pressione.</string>
+    <string name="creatori">Creatori App</string>
     <string name="copyright">Siano Vincenzo\nAlfano Roberto\nPozzi Cristian</string>
     <string name="settore">Settore Marketing</string>
     <string name="azienda">MeltingSoft</string>

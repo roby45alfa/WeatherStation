@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/buttonCrediti"
-        android:layout_width="wrap_content"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -20,7 +20,7 @@
         android:background="@drawable/roundedbutton"
         android:onClick="switchCrediti"
         android:text="@string/crediti"
-        android:textColor="@android:color/white"
+        android:textColor="@color/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/buttonMeteo"
-        android:layout_width="267dp"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -41,7 +41,7 @@
         android:background="@drawable/roundedbutton"
         android:onClick="switchWeather"
         android:text="@string/meteo"
-        android:textColor="@android:color/white"
+        android:textColor="@color/buttonText"
         app:layout_constraintBottom_toTopOf="@+id/buttonCrediti"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,22 +50,27 @@
 
     <ImageView
         android:id="@+id/companyLogo"
-        android:layout_width="351dp"
-        android:layout_height="372dp"
+        android:layout_width="253dp"
+        android:layout_height="250dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/logo"
         android:contentDescription="@string/logo"
         android:foregroundGravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.388"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@mipmap/logo"
+        tools:srcCompat="@mipmap/logo" />
 
     <TextView
         android:id="@+id/AppTitle"
@@ -79,10 +84,10 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/firstTitle"
-        android:textColor="@color/blue"
+        android:textColor="@color/titoli"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

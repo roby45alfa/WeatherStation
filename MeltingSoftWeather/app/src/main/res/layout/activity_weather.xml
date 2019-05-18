@@ -23,10 +23,10 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/secondTitle"
-        android:textColor="@color/blue"
+        android:textColor="@color/titoli"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,12 +49,12 @@
         app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"
+        app:layout_constraintVertical_bias="0.148"
         app:srcCompat="@drawable/thermometer" />
 
     <TextView
         android:id="@+id/degreesText"
-        android:layout_width="wrap_content"
+        android:layout_width="142dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -64,45 +64,47 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/test1"
-        android:textColor="@android:color/black"
+        android:textColor="@color/testo"
         android:textSize="30sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/temperatureImg"
-        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="414dp"
-        android:layout_height="8dp"
+        android:layout_height="5dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.349" />
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_width="9dp"
+        android:layout_width="5dp"
         android:layout_height="516dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tableRow1" />
+        app:layout_constraintTop_toBottomOf="@+id/tableRow1"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/humidityText"
-        android:layout_width="wrap_content"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -112,15 +114,15 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/humidity"
-        android:textColor="@color/blue"
+        android:textColor="@color/titoli"
         android:textSize="24sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.459" />
 
     <TextView
         android:id="@+id/temperatureText"
@@ -134,19 +136,19 @@
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/temperature"
-        android:textColor="@color/blue"
+        android:textColor="@color/titoli"
         android:textSize="24sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto_bold"
         app:layout_constraintBottom_toTopOf="@+id/degreesText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.936" />
 
     <ImageView
         android:id="@+id/humidityImg"
-        android:layout_width="158dp"
+        android:layout_width="150dp"
         android:layout_height="130dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -157,15 +159,15 @@
         android:contentDescription="@string/humidity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639"
+        app:layout_constraintVertical_bias="0.676"
         app:srcCompat="@drawable/humidity" />
 
     <TextView
         android:id="@+id/percentageText"
-        android:layout_width="64dp"
+        android:layout_width="159dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -175,20 +177,20 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/test2"
-        android:textColor="@android:color/black"
+        android:textColor="@color/testo"
         android:textSize="30sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <ImageView
         android:id="@+id/pressureImg"
-        android:layout_width="141dp"
-        android:layout_height="143dp"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -198,15 +200,15 @@
         android:contentDescription="@string/pressure"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintHorizontal_bias="0.967"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653"
+        app:layout_constraintVertical_bias="0.676"
         app:srcCompat="@drawable/pressure" />
 
     <TextView
         android:id="@+id/pressureText"
-        android:layout_width="wrap_content"
+        android:layout_width="147dp"
         android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -216,19 +218,19 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/pressure"
-        android:textColor="@color/blue"
+        android:textColor="@color/titoli"
         android:textSize="24sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.457" />
 
     <TextView
         android:id="@+id/pressText"
-        android:layout_width="wrap_content"
+        android:layout_width="149dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -238,14 +240,14 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/test3"
-        android:textColor="@android:color/black"
+        android:textColor="@color/testo"
         android:textSize="30sp"
-        app:fontFamily="sans-serif-medium"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.964"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.83" />
 
 </android.support.constraint.ConstraintLayout>
